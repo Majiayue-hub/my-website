@@ -1,47 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>More About Me</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About | Personal Profile</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #e8f0fe;
+        * {
             margin: 0;
-            padding: 30px;
+            padding: 0;
+            box-sizing: border-box;
         }
-        h1, h2 {
-            color: #223355;
+
+        body {
+            font-family: "Segoe UI", sans-serif;
+            background: linear-gradient(135deg, #eaf6ff 0%, #f3ecff 50%, #fff5fb 100%);
+            min-height: 100vh;
+            color: #333;
+            padding: 30px 15px;
         }
-        nav a {
-            color:#2058aa;
+
+        .page {
+            max-width: 1100px;
+            margin: 0 auto;
         }
-        section {
-            margin:25px 0;
+
+        .nav-bar {
+            background: #ffffff;
+            border-radius: 16px;
+            padding: 20px 35px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+            margin-bottom: 28px;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+            color: #6b4fcf;
+        }
+
+        .nav-links a {
+            margin-left: 24px;
+            text-decoration: none;
+            color: #555;
+            font-weight: 500;
+            font-size:17px;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #6b4fcf;
+            text-decoration: underline;
+        }
+        .card {
+            background: #ffffff;
+            border-radius: 20px;
+            padding:35px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+            margin-bottom:24px;
+        }
+        .card h1 {
+            color: #6b4fcf;
+            margin-bottom:22px;
+            font-size:28px;
+        }
+        .card h2 {
+            color: #6b4fcf;
+            margin:24px 0 12px;
+            border-left: 5px solid #b388ff;
+            padding-left:12px;
+            font-size:21px;
+        }
+        .card p {
+            line-height:1.75;
+            font-size:16px;
+            color:#444;
+            margin-bottom:12px;
+        }
+        footer {
+            text-align: center;
+            padding: 22px;
+            color: #888;
+            font-size: 14px;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>More About Me</h1>
-        <nav>
-            <a href=" ">Back to Home</a >
+    <div class="page">
+        <nav class="nav-bar">
+            <div class="logo">✨ My Profile Website</div>
+            <div class="nav-links">
+                <a href=" ">← Back to Home</a >
+                <a href="about.html">About Me</a >
+            </div>
         </nav>
-    </header>
 
-    <section>
-        <h2>My Hobbies</h2>
-        <p>I enjoy reading and working out in my spare time.</p >
-    </section>
+        <div class="card">
+            <h1>About Me</h1>
+            <h2>My Study Experience</h2>
+            <p>I am studying Computer Science. In this course, I learned the basics of HTML and CSS, and built this personal homepage as my assignment. Writing code helps me understand how web pages work.</p >
 
-    <section>
-        <h2>My Goals</h2>
-        <p>I want to keep improving my university study.</p >
-    </section>
+            <h2>My Skills</h2>
+            <p>I can write basic HTML structure and add CSS styles to adjust layout, colors, shadows and responsive design. I keep practicing to improve my front-end skills.</p >
 
-    <footer>
-        <p>© 2026 Ma Jiayue</p >
-    </footer>
+            <h2>My Expectation</h2>
+            <p>I hope I can continue to learn web development. In the future, I want to make interactive websites and explore more programming fields.</p >
+        </div>
+
+        <footer>
+            © 2026 Majia Yue. All rights reserved.
+        </footer>
+    </div>
 </body>
 </html>
